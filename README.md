@@ -11,3 +11,8 @@ You can clone it and easily use without any database creations.
 #Dashboard
 
 ![malumotlar](https://user-images.githubusercontent.com/85536651/159842891-66dae39e-785d-46dd-9ff7-f46fbd3e9af9.png)
+
+
+#Add patients
+
+![qoshish](https://user-images.githubusercontent.com/85536651/159843030-65e972e8-f393-47d7-ac2b-b20ab6106fdc.png)
