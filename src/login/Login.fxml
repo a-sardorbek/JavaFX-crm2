@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <children>
+      <AnchorPane layoutX="57.0" layoutY="56.0" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: transparent;">
+         <children>
+            <AnchorPane prefHeight="465.0" prefWidth="313.0" style="-fx-background-color: #79cf61; -fx-background-radius: 2em;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="277.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+               <children>
+                  <Label layoutX="59.0" layoutY="35.0" prefHeight="41.0" prefWidth="98.0" text="Login" textFill="WHITE">
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="usernameField" focusColor="#0f057c" labelFloat="true" layoutX="54.0" layoutY="149.0" prefHeight="41.0" prefWidth="202.0" promptText="Username" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="passwordField" focusColor="#0f057c" labelFloat="true" layoutX="59.0" layoutY="253.0" prefHeight="41.0" prefWidth="202.0" promptText="Password" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton fx:id="kirishBtn" layoutX="59.0" layoutY="343.0" onAction="#kirishBtnPress" prefHeight="35.0" prefWidth="81.0" styleClass="buttonKirish" stylesheets="@../stylesheets/Buttons.css" text="Kirish">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fx:id="registerText" fill="#1723c9" layoutX="169.0" layoutY="373.0" onMouseClicked="#registerClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Registratsiya" wrappingWidth="128.00000302493572">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="480.0" prefWidth="285.0" style="-fx-background-radius: 1em; -fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="305.0" AnchorPane.topAnchor="10.0" />
+            <ImageView fx:id="exitIBtn" fitHeight="32.0" fitWidth="33.0" layoutX="550.0" layoutY="1.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="467.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="1.0">
+               <image>
+                  <Image url="@../images/icons8_shutdown_64px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

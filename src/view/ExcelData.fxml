@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vboxId" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExcelDataController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="hamaExcelBtn" onMouseClicked="#hammaExcelClick" prefHeight="56.0" prefWidth="188.0" styleClass="buttonExcel" stylesheets="@../stylesheets/Buttons.css" text="Excel Format">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_export_csv_50px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXDatePicker fx:id="bugunDatefield" defaultColor="#50cd71" prefHeight="25.0" prefWidth="202.0" promptText="Sana kiriting" styleClass="calendar" stylesheets="@../stylesheets/Buttons.css">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </JFXDatePicker>
+         </children>
+         <VBox.margin>
+            <Insets left="70.0" right="70.0" top="60.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

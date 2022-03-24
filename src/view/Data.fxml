@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DataController">
+   <children>
+      <JFXTextField fx:id="searchField" alignment="CENTER" labelFloat="true" promptText="Qidirish" unFocusColor="#120a86">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="120.0" right="120.0" top="30.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </JFXTextField>
+      <TableView fx:id="listTableView" onMouseClicked="#handleDateClick" prefHeight="479.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="nameTable" prefWidth="75.0" text="Ism" />
+          <TableColumn fx:id="surnameTable" prefWidth="75.0" text="Familiya" />
+            <TableColumn fx:id="phoneTable" prefWidth="75.0" text="Telefon" />
+            <TableColumn fx:id="borthDateTable" prefWidth="75.0" text="Tugulgan Sana" />
+            <TableColumn fx:id="paymeentTable" prefWidth="75.0" text="To'lov" />
+            <TableColumn fx:id="regTable" prefWidth="75.0" text="Registratsiya" />
+        </columns>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" top="30.0" />
+         </VBox.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</VBox>

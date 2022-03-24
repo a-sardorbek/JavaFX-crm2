@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingController">
+   <children>
+      <Label prefHeight="31.0" prefWidth="165.0" text="Registratsiya" textFill="#1130ab">
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Book Antiqua Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="usernameField" labelFloat="true" promptText="Username">
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="passwordField" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Parol">
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="confirmPasswordFieldd" layoutX="10.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Parolni tasdiqlang">
+         <VBox.margin>
+            <Insets left="60.0" right="60.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="80.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="saveBtn" onMouseClicked="#SabeClicked" stylesheets="@../stylesheets/Buttons.css" text="Qo'shish">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="cancelBtn" onMouseClicked="#cancelClicked" stylesheets="@../stylesheets/Buttons.css" text="Bekor qilish">
+               <HBox.margin>
+                  <Insets left="200.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

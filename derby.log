@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Thu Mar 24 09:10:19 UZT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-017f-ba1e-410f-000006515b70 
+on database directory D:\Desctop\Netbeans Workspace\Lorent1\data with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/D:/Desctop/Netbeans%20Workspace/Lorent1/dist/run528023509/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_301-b09
+user.dir=D:\Desctop\Netbeans Workspace\Lorent1
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Mar 24 09:12:09 UZT 2022:
+Shutting down instance a816c00e-017f-ba1e-410f-000006515b70 on database directory D:\Desctop\Netbeans Workspace\Lorent1\data with class loader sun.misc.Launcher$AppClassLoader@55f96302 
